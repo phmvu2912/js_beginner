@@ -117,9 +117,71 @@ const a = "Hello World"
     // + "" khiến chuỗi bị bẻ ra từng ký tự một ('hello' -> ['h, 'e', 'l', 'l', 'o'])
     // + mỗi lần gặp dấu cách thì cắt ra 1 phần tử ('hello world' -> ['hello', 'world')
 
+
+// ==============================================
+
     
 // 2. NUMBER
+// - để biểu diễn tất cả các giá trị số, không phân biệt số nguyên (integer) hay số thực (float).
+// - các số được lưu trữ dưới dạng số thực dấu phẩy động (floating-point)
+//   theo chuẩn IEEE 754, có độ chính xác 64-bit.
 
+// - các giá trị đặc biệt:
+// a. Infinity (giá trị vượt quá giới hạn lớn nhất)
+// b. -Infinity (giá trị vượt quá giới hạn lớn nhất)
+// c. NaN: 
+// - Not a Number, biểu thị giá trị không phải số
+// - nếu thực hiện một phép tính nhưng vi phạm quy tắc tính toán thì kq sẽ trả về NaN
+
+// - các phương thức của Number
+// a. Number()
+// - dùng để chuyển đổi 1 biến hoặc 1 giá trị nào đó sang Number
+// - nếu không thể chuyển đổi thì nó sẽ trả về NaN
+
+// b. parseInt()
+// - là 1 hàm dùng để chuyển từ String sang số nguyên
+
+// - nếu như chuỗi muốn chuyển sang có số ở đầu thì nó sẽ lấy phần số ở đầu
+console.log(parseInt("100.1 years")) // kq: 100
+
+// - nếu không thể chuyển đổi thì nó sẽ trả về NaN 
+console.log(parseInt("years 100")) // kq: NaN
+
+// c. parseFloat()
+// - là 1 hàm dùng để chuyển từ String sang số số thực (floating-point number)
+// - sẽ giữ lại phần thập phân nếu có
+
+// - nếu như chuỗi muốn chuyển sang có số ở đầu thì nó sẽ lấy phần số ở đầu
+console.log(parseFloat("100.1anc")) // kq: 100.1
+
+// - nếu không thể chuyển đổi thì nó sẽ trả về NaN 
+console.log(parseFloat("years 100.1")) // kq: NaN
+
+// d. toString()
+// - chuyển kiểu Number thành String
+const num = 123
+console.log(typeof(num.toString())) // kq: string
+
+// e. toFixed(n)
+// - làm tròn số đến chữ số thập phân
+// - chuyển số thành chuỗi (string) sau khi làm tròn
+
+const num2 = 3.14159;
+console.log(num2.toFixed()) // kq: 3
+console.log(num2.toFixed(2)) // kq: 3.14
+console.log(num2.toFixed(3)) // kq: 3.142
+
+// f. toPrecision(tổng_số_muốn_hiển_thị)
+// - làm tròn tới tổng chữ số mà bạn muốn
+// - sau đó trả về kiểu String
+
+let num3 = 123.456;
+console.log(num3.toPrecision()) // kq: 123.456
+console.log(num3.toPrecision(2)) // kq: 1.2e+2
+console.log(num3.toPrecision(3)) // kq: 123
+
+// g. valueOf()
+// - dùng để lấy giá trị nguyên thủy
 
 // 3.
 
