@@ -217,4 +217,19 @@ console.log(demo()); // undefined
 
 // - js tự động gán giá trị undefined nếu các trường hợp trên xảy ra
 
-// 5.
+// 5. NULL
+// - có thể hiểu là rỗng ("tạm thời" chưa có giá trị)
+// - là 1 kiểu giá trị được lập trình viên cố ý gán (khác so với undefined)
+// vd:
+let user = null;
+console.log(user); // null
+
+
+// khi nào sử dụng UNDEFINED và NULL?
+// - không cần thiết phải gán undefined bằng tay vì js sẽ tự làm điều đó
+
+// - gán null khi:
+// + biến hiện tại chưa có giá trị, nhưng sẽ có sau
+// + muốn xóa 1 object hoặc reset nó
+
+// =======================================================================================
