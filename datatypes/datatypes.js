@@ -204,7 +204,17 @@ console.log(10 == "10") // true
 console.log(10 === "10") // false
 
 
-// 4. 
+// 4. UNDEFINED
+// - sẽ xuất hiện khi:
+// + khai báo biến nhưng không có giá trị
+// vd:
+let und;
+console.log(und) // undefined
 
+// + 1 hàm không trả về gì
+function demo() {}
+console.log(demo()); // undefined
+
+// - js tự động gán giá trị undefined nếu các trường hợp trên xảy ra
 
 // 5.
