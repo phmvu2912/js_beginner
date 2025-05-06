@@ -183,10 +183,28 @@ console.log(num3.toPrecision(3)) // kq: 123
 // g. valueOf()
 // - dùng để lấy giá trị nguyên thủy
 
-// 3.
+// 3. BOOLEAN
+// - có 2 giá trị: true và false
+// - dùng để:
+// + so sánh giá trị
+// + điều khiển câu lệnh (if, else,...)
+// + gán trạng thái
+// + ...
+
+// - vd:
+const isLogin = false;
+
+console.log(isLogin) // false
+console.log(typeof isLogin); // boolean
+
+// - biểu thức trả về boolean:
+console.log(5 > 3) // true
+console.log(3 > 5) // false
+console.log(10 == "10") // true
+console.log(10 === "10") // false
 
 
-// 4.
+// 4. 
 
 
 // 5.
